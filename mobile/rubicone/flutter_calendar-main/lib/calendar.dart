@@ -264,7 +264,75 @@ class _CalendarState extends State<Calendar> {
             calendar(),
             eventTitle(),
             Column(children:_eventWidgets),
-            SizedBox(height:60)
+            SizedBox(height:130),
+            Stack(
+              children: [
+                new Positioned(
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                              color: Color(0xffdcdcdc),
+                              blurRadius: 7,
+                              offset: Offset(
+                                  0,
+                                  4
+                              )
+                          )
+                        ],
+                        borderRadius: BorderRadius.circular(20)
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        IconButton(
+                          onPressed: () => {
+                            print('Home button pressed'),
+                            Icon(Icons.home_outlined, color: Color(0xff0C73FE)),
+                          },
+                          icon: Icon(
+                              Icons.home_outlined, color: Colors.black, size: 30),
+                        ),
+                        IconButton(
+                          onPressed: () => {
+                            print('Task button pressed'),
+                            Icon(Icons.task_outlined, color: Color(0xff0C73FE),),
+                          },
+                          icon: Icon(
+                              Icons.task_outlined, color: Colors.black, size: 30),
+                        ),
+                        IconButton(
+                          onPressed: () => {
+                            print('Timetable button pressed'),
+                            Icon(Icons.book_outlined, color: Color(0xff0C73FE),),
+                          },
+                          icon: Icon(
+                              Icons.book_outlined, color: Color(0xff0C73FE), size: 35),
+                        ),
+                        IconButton(
+                          onPressed: () => {
+                            print('Shop button pressed'),
+                            Icon(Icons.shopping_cart_outlined, color: Color(0xff0C73FE),),
+                          },
+                          icon: Icon(
+                              Icons.shopping_cart_outlined, color: Colors.black, size: 30),
+                        ),
+                        IconButton(
+                          onPressed: () => {
+                            print('Home button pressed'),
+                            Icon(Icons.account_circle_outlined, color: Color(0xff0C73FE),),
+                          },
+                          icon: Icon(
+                              Icons.account_circle_outlined, color: Colors.black, size: 30),
+                        ),
+                      ],
+                    ),
+                  ),
+                )
+              ],
+            )
           ],
         ),
     );
