@@ -9,6 +9,7 @@ import 'package:provider/provider.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'package:intl/intl.dart';
+import 'storeScreen.dart';
 
 class Calendar extends StatefulWidget {
 
@@ -291,6 +292,7 @@ class _CalendarState extends State<Calendar> {
                           onPressed: () => {
                             print('Home button pressed'),
                             Icon(Icons.home_outlined, color: Color(0xff0C73FE)),
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => Shop()))
                           },
                           icon: Icon(
                               Icons.home_outlined, color: Colors.black, size: 30),

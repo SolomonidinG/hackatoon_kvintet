@@ -4,7 +4,7 @@ import 'package:toggle_switch/toggle_switch.dart';
 import 'package:flutter/services.dart';
 
 class taskScreen extends StatefulWidget {
-  const taskScreen({Key? key}) : super(key: key);
+  const taskScreen({Key key}) : super(key: key);
 
   @override
   _taskSreenState createState() => _taskSreenState();
@@ -86,7 +86,7 @@ class _taskSreenState extends State<taskScreen> {
                                     Row(
                                       children: [
                                         Checkbox(
-                                          onChanged: (bool? value) {
+                                          onChanged: (bool value) {
                                             if (value != null) {
                                               setState(() => this._checkBoxVal = value);
                                             }
@@ -98,7 +98,7 @@ class _taskSreenState extends State<taskScreen> {
                                     Row(
                                       children: [
                                         Checkbox(
-                                          onChanged: (bool? value) {
+                                          onChanged: (bool value) {
                                             if (value != null) {
                                               setState(() => this._checkBoxVal = value);
                                             }
@@ -110,7 +110,7 @@ class _taskSreenState extends State<taskScreen> {
                                     Row(
                                       children: [
                                         Checkbox(
-                                          onChanged: (bool? value) {
+                                          onChanged: (bool value) {
                                             if (value != null) {
                                               setState(() => this._checkBoxVal = value);
                                             }
@@ -150,7 +150,7 @@ class _taskSreenState extends State<taskScreen> {
                                     Row(
                                       children: [
                                         Checkbox(
-                                          onChanged: (bool? value) {
+                                          onChanged: (bool value) {
                                             if (value != null) {
                                               setState(() => this._checkBoxVal1 = value);
                                             }
@@ -162,7 +162,7 @@ class _taskSreenState extends State<taskScreen> {
                                     Row(
                                       children: [
                                         Checkbox(
-                                          onChanged: (bool? value) {
+                                          onChanged: (bool value) {
                                             if (value != null) {
                                               setState(() => this._checkBoxVal2 = value);
                                             }
@@ -174,7 +174,7 @@ class _taskSreenState extends State<taskScreen> {
                                     Row(
                                       children: [
                                         Checkbox(
-                                          onChanged: (bool? value) {
+                                          onChanged: (bool value) {
                                             if (value != null) {
                                               setState(() => this._checkBoxVal3 = value);
                                             }
@@ -214,7 +214,7 @@ class _taskSreenState extends State<taskScreen> {
                                     Row(
                                       children: [
                                         Checkbox(
-                                          onChanged: (bool? value) {
+                                          onChanged: (bool value) {
                                             if (value != null) {
                                               setState(() => this._checkBoxVal = value);
                                             }
@@ -226,7 +226,7 @@ class _taskSreenState extends State<taskScreen> {
                                     Row(
                                       children: [
                                         Checkbox(
-                                          onChanged: (bool? value) {
+                                          onChanged: (bool value) {
                                             if (value != null) {
                                               setState(() => this._checkBoxVal = value);
                                             }
@@ -238,7 +238,7 @@ class _taskSreenState extends State<taskScreen> {
                                     Row(
                                       children: [
                                         Checkbox(
-                                          onChanged: (bool? value) {
+                                          onChanged: (bool value) {
                                             if (value != null) {
                                               setState(() => this._checkBoxVal = value);
                                             }

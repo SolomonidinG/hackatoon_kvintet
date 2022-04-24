@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class Shop extends StatefulWidget {
-  const Shop({Key? key}) : super(key: key);
+  const Shop({Key key}) : super(key: key);
 
   @override
   _ShopState createState() => _ShopState();

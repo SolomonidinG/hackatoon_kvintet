@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:toggle_switch/toggle_switch.dart';
 
 class profileScreen extends StatefulWidget {
-  const profileScreen({Key? key}) : super(key: key);
+  const profileScreen({Key key}) : super(key: key);
 
   @override
   _profileScreenState createState() => _profileScreenState();
